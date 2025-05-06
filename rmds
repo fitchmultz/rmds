@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# rmds - Remove .DS_Store files recursively
+
+if [ "$1" = "--help" ] || [ "$1" = "-h" ]; then
+  echo "Usage: rmds [OPTION]"
+  echo "Remove all .DS_Store files in the current directory and subdirectories."
+  echo ""
+  echo "Options:"
+  echo "  -h, --help     display this help and exit"
+  echo "  -v, --verbose  show files as they are deleted"
+  exit 0
+fi
+
+VERBOSE=false
+if [ "$1" = "--verbose" ] || [ "$1" = "-v" ]; then
+  VERBOSE=true
+fi
+
+count=0
+
+while IFS= read -r -d '' file; do
+  if $VERBOSE; then
+    echo "Removing: $file"
+  fi
+  rm "$file"
+  ((count++))
+done < <(find . -name ".DS_Store" -type f -print0)
+
+echo "Removed $count .DS_Store file(s)"

@@ -1,0 +1,30 @@
+.TH RMDS 1 "May 2024" "rmds 1.0.0" "User Commands"
+.SH NAME
+rmds \- remove .DS_Store files recursively
+.SH SYNOPSIS
+.B rmds
+[\fIOPTION\fR]
+.SH DESCRIPTION
+.B rmds
+removes all .DS_Store files in the current directory and its subdirectories.
+.SH OPTIONS
+.TP
+.BR \-h ", \-\-help"
+Display help information and exit.
+.TP
+.BR \-v ", \-\-verbose"
+Show files as they are deleted.
+.SH EXAMPLES
+.TP
+Remove all .DS_Store files in the current directory:
+.B rmds
+.TP
+Show files as they are deleted:
+.B rmds --verbose
+.SH AUTHOR
+Written by Mitch Fultz.
+.SH COPYRIGHT
+Copyright \(co 2024 Mitch Fultz.
+License MIT.
+.SH SEE ALSO
+find(1), rm(1)
