@@ -15,8 +15,17 @@ While `.DS_Store` files will be recreated when Finder opens the directory again,
 
 ## Installation
 
+### Using Homebrew
+
 ```bash
+brew tap fitchmultz/tap
 brew install rmds
+```
+
+or directly:
+
+```bash
+brew install fitchmultz/tap/rmds
 ```
 
 ## Development
