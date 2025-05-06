@@ -13,10 +13,10 @@ class Rmds < Formula
   test do
     # Create a test .DS_Store file
     touch "#{testpath}/.DS_Store"
-    system "#{bin}/rmds"
-    refute_predicate testpath/".DS_Store", :exist?
-    
+    system bin/"rmds"
+    refute_path_exists "#{testpath}/.DS_Store"
+
     # Test help flag
-    assert_match "Usage: rmds", shell_output("#{bin}/rmds --help")
+    assert_match "Usage: rmds", shell_output(bin/"rmds --help")
   end
 end
