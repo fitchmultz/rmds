@@ -12,6 +12,26 @@ Key differences:
 - `rmds` has verbose output option to show which files are being removed
 - `rmds` reports a count of removed files
 
+## Other Potentially Related Homebrew Tools
+
+### clean
+The `clean` formula is a general utility that searches for files matching a regex and deletes them. While it could be configured to delete .DS_Store files, it's not specialized for this purpose and requires regex knowledge.
+
+Key differences:
+- `rmds` is purpose-built specifically for .DS_Store files
+- `rmds` requires no regex knowledge
+- `rmds` is macOS-focused for a macOS-specific issue
+- `rmds` provides helpful reporting of removed files
+
+### macos-trash
+The `macos-trash` formula moves files and folders to the trash rather than deleting them. It's a general-purpose utility for macOS.
+
+Key differences:
+- `rmds` permanently deletes .DS_Store files instead of moving to trash
+- `rmds` is specialized for a specific file type
+- `rmds` is more lightweight (shell script vs Xcode project)
+- `rmds` recursively handles all matching files in one command
+
 ## Alternatives
 
 ### Using find directly
@@ -40,4 +60,4 @@ Various GUI applications exist to manage .DS_Store files but they typically:
 
 ## Why rmds?
 
-`rmds` provides a focused, command-line solution for a common problem facing macOS users. Its simplicity, scriptability, and active maintenance make it an ideal candidate for inclusion in Homebrew core.
+`rmds` provides a focused, command-line solution for a common problem facing macOS users. Its simplicity, scriptability, and active maintenance make it an ideal candidate for inclusion in Homebrew core. There are currently no active, specialized tools in Homebrew core for managing .DS_Store files, making `rmds` a valuable addition to the ecosystem.
