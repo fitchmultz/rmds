@@ -18,7 +18,7 @@
 The project is ready for the following next steps:
 
 ## Immediate Next Steps
-1. Create a GitHub repository at github.com/mitchfultz/rmds
+1. Create a GitHub repository at github.com/fitchmultz/rmds
 2. Push the code to GitHub
 3. Create a v1.0.0 release on GitHub
 4. Calculate SHA256 for the tarball

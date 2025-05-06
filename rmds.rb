@@ -1,7 +1,7 @@
 class Rmds < Formula
   desc "Remove all .DS_Store files recursively from current directory"
-  homepage "https://github.com/mitchfultz/rmds"
-  url "https://github.com/mitchfultz/rmds/archive/refs/tags/v1.0.0.tar.gz"
+  homepage "https://github.com/fitchmultz/rmds"
+  url "https://github.com/fitchmultz/rmds/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "REPLACE_WITH_ACTUAL_SHA256_AFTER_RELEASE"
   license "MIT"
 

@@ -2,7 +2,7 @@
 
 ## 1. Repository Setup
 - [ ] Initialize git repository: `git init`
-- [ ] Create GitHub repository: https://github.com/mitchfultz/rmds
+- [ ] Create GitHub repository: https://github.com/fitchmultz/rmds
 - [ ] Add all files to git
 - [ ] Make initial commit
 - [ ] Push to GitHub

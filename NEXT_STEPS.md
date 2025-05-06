@@ -7,8 +7,8 @@
 
 ## 2. Push to GitHub
 ```bash
-# Add the GitHub remote (replace YOUR_USERNAME with your GitHub username)
-git remote add origin https://github.com/mitchfultz/rmds.git
+# Add the GitHub remote
+git remote add origin https://github.com/fitchmultz/rmds.git
 
 # Push to GitHub
 git push -u origin main
@@ -27,7 +27,7 @@ git push -u origin main
 ## 4. Get SHA256 for Formula
 ```bash
 # Download the tarball
-curl -L -o rmds-1.0.0.tar.gz https://github.com/mitchfultz/rmds/archive/refs/tags/v1.0.0.tar.gz
+curl -L -o rmds-1.0.0.tar.gz https://github.com/fitchmultz/rmds/archive/refs/tags/v1.0.0.tar.gz
 
 # Calculate SHA256
 shasum -a 256 rmds-1.0.0.tar.gz
